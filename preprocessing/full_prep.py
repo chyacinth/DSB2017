@@ -194,6 +194,7 @@ def full_prep_mhd(data_path, prep_folder, n_worker=None, use_existing=True):
 
     N = len(filelist)
     partial_savenpy(1)
+    partial_savenpy(0)
     # _=pool.map(partial_savenpy,range(N))
     # pool.close()
     # pool.join()

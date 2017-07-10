@@ -55,7 +55,7 @@ nod_net.load_state_dict(checkpoint['state_dict'])
 torch.cuda.set_device(0)
 nod_net = nod_net.cuda()
 #nod_net = nod_net.cpu()
-cudnn.benchmark = False
+cudnn.benchmark = True
 nod_net = DataParallel(nod_net)
 
 bbox_result_path = './bbox_result'
